@@ -10,7 +10,8 @@ namespace Homework_Project
     {
         public class ArrayProcessor
         {
-            public static void ProcessArray(int[] array, Action<int> processor)
+            public delegate void myAction( int i );
+            public static void ProcessArray(int[] array, myAction processor)
             {
                 foreach (int item in array)
                 {
