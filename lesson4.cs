@@ -81,7 +81,9 @@ namespace Homework_Project
                     }
                 }
 
+                maxWidth += 2; // להוסיף 2 תווים לרווח נוסף
                 string res = "";
+
                 for (int row = 0; row < results.GetLength(0); row++)
                 {
                     for (int col = 0; col < results.GetLength(1); col++)
